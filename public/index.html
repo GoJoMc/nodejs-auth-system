@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Auth Test</title>
+
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Auth Test</h1>
+
+            <div class="tabs">
+                <button id="registerTab" class="active">Register</button>
+
+                <button id="loginTab">Login</button>
+            </div>
+
+            <form id="registerForm" class="active">
+                <input
+                    type="text"
+                    id="registerUsername"
+                    placeholder="Username"
+                />
+
+                <input type="email" id="registerEmail" placeholder="Email" />
+
+                <input
+                    type="password"
+                    id="registerPassword"
+                    placeholder="Password"
+                />
+
+                <button type="submit" class="submit">Register</button>
+            </form>
+
+            <form id="loginForm">
+                <input type="email" id="loginEmail" placeholder="Email" />
+
+                <input
+                    type="password"
+                    id="loginPassword"
+                    placeholder="Password"
+                />
+
+                <button type="submit" class="submit">Login</button>
+            </form>
+
+            <div class="output" id="output"></div>
+        </div>
+
+        <script src="./js/app.js"></script>
+    </body>
+</html>
